@@ -21,8 +21,13 @@ public class GroceryDiscountSecondVersion {
 		System.out.print("Please enter the cost of your groceries, or type '0' to quit: ");
 		moneySpent = in.nextDouble();
 		
-		//How to validate that moneySpent is a number between 10-1000?
+		//How to validate that moneySpent is a number?
 		
+		while (moneySpent>1000) {
+			System.out.print("Please enter a cost that is less than $1,000, or type '0' to quit: ");
+			moneySpent = in.nextDouble();
+		} //Validating that the cost isn't bigger than 1000
+				
 		if (moneySpent == 0) {
 			break;
 		} //break statement
@@ -62,7 +67,7 @@ public class GroceryDiscountSecondVersion {
 		
 		System.out.println(" ");
 		
-		} //while loop for cost prompt
+		} //while loop for main cost prompt
 		
 		in.close();
 		
