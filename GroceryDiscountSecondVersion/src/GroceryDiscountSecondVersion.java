@@ -13,7 +13,7 @@ public class GroceryDiscountSecondVersion {
 			while (moneySpent>1000) {
 				System.out.print("Please enter a cost that is less than $1,000, or type '0' to quit: ");
 				moneySpent = in.nextDouble();
-			} //Validating that the cost isn't bigger than 1000
+			} //Validating that the cost isn't bigger than 1000. Will keep asking for proper amount
 				
 		if (moneySpent == 0) {
 			break;
